@@ -2,7 +2,7 @@
  * Fonts
  * ------------------------------------- */
 // Google fonts
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500|Kanit:200,400");
 $base-font: "Open Sans", "Helvetica", "sans-serif";
 $header-font: "Raleway", "Helvetica", "sans-serif";
 
@@ -14,7 +14,7 @@ $header-font: "Raleway", "Helvetica", "sans-serif";
 //        font-url('FontFile.woff') format('woff'),
 //        font-url('FontFile.ttf') format('truetype')
 // }
-// $my-font: "Font Name";
+$my-font: "Kanit";
 
 // Font-size and line-height
 $base-size: 16px;
@@ -26,9 +26,9 @@ $base-height: 1.4;
 // Scheme
 $brand-color: #D23333;
 
-$red: #EE5F5B;
-$blue: #469AE0;
-$yellow: #FDB631;
+$red: #800000;
+$blue: #004080;
+$yellow: #FFCC66;
 $orange: #E67E22;
 $green: #32B796;
 

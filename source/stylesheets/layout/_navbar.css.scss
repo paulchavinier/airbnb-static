@@ -42,10 +42,10 @@
 .navbar-wagon-link {
   color: #616668;
   font-size: 14px;
-}
-.navbar-wagon-link:hover {
-  color: #da552f;
-  text-decoration: none;
+  &:hover {
+    color: $red;
+    text-decoration: none;
+  }
 }
 
 /* Navbar right button */
@@ -58,11 +58,11 @@
   color: white;
   font-size: 14px;
   border: 2px solid #D23333;
-}
-.navbar-wagon-button:hover {
-  color: white;
-  background: #D23333;
-  border-color: #ac2626;
+  &:hover {
+    color: white;
+    background: $red;
+    border-color: $red;
+  }
 }
 
 /* Navbar search form */

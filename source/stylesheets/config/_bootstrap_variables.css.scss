@@ -4,11 +4,11 @@
  * ------------------------------------- */
 
 // General style
-$font-family-sans-serif:  $base-font;
+$font-family-sans-serif:  $my-font;
 $body-bg:                 white;
 $font-size-base:          $base-size;
 $line-height-base:        $base-height;
-$headings-font-family:    $header-font;
+// $headings-font-family:    $header-font;
 
 // Semantic color scheme
 $brand-primary:   $blue;
@@ -21,3 +21,4 @@ $brand-warning:   $orange;
 $border-radius-base:  2px;
 $border-radius-large: 2px;
 $border-radius-small: 2px;
+$btn-primary-border: darken(#FFFF00, 6.5%);
