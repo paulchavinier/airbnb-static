@@ -3,16 +3,18 @@ title: Le Wagon Middleman boilerplate
 ---
 
 <div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
+  <h1>Bienvenue chez Marlette</h1>
   <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
+    <%= link_to "La nouvelle gamme des produits Marlettes", "http://www.marlette.fr/" %>
   </p>
 </div>
 
-<div class="banner" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background.jpg');">
+<div class="banner" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/Marlette.jpg');">
   <div class="banner-content">
-    <h1>WELCOME HOME</h1>
-    <p>Rent unique places to stay from local hosts in 190+ countries.</p>
+    <h1 id="welcome">WELCOME HOME</h1>
+    <p>
+      <%= image_tag "MARLETTE_NOIR.png", id: "logohome"%>
+    </p>
     <form action="#" class="form-inline">
       <input type="text" class="form-control input-lg" placeholder="checkin">
       <input type="text" class="form-control input-lg" placeholder="checkout">
