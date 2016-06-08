@@ -1,6 +1,5 @@
 .card {
   height: 450px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: 250px;
   background-size: cover !important;
   color: white;
@@ -15,10 +14,14 @@
 }
 .card-category {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: -10px;
+  left: 8px;
+}
+
+.card-category h2{
   font-size: 20px;
 }
+
 .card-description {
   position: absolute;
   bottom: 10px;
@@ -42,3 +45,6 @@
 .card-link:hover{
   opacity: 0.1;
 }
+
+
+

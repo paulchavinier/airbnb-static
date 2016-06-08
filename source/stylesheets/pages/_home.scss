@@ -1,3 +1,43 @@
 #logohome{
-  width: 300px;
+  width: 400px;
+}
+
+.formmarlette {
+  width: 600px;
+  border: 1px;
+  border-color: black;
+}
+
+.presentation{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.formulaire{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.formulaire h4{
+  padding-bottom:10px;
+}
+
+.form-horizontal{
+  width: 500px;
+  text-align: center;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.checkbox{
+  font-size:12px;
+  text-align: left;
 }

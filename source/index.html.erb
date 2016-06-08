@@ -26,29 +26,187 @@ title: Le Wagon Middleman boilerplate
   </p>
 </div> -->
 
-
-<div class="wrapper-grey padded">
   <div class="container">
-    <h2 class="text-center">La nouvelle game de muesli Marlette</h2>
+    <div class="row">
+      <div class="col-xs-12">
+       <div class="presentation">
+          <h3 class="text-center" id="nouvelle_gamme">Marlette lance ses mueslis : les nouveaux indispensables du petit-déjeuner !</h3><br>
+          <p class="text-center">Envie de faire le plein d’énergie dès le réveil ? Découvrez nos trois délicieuses recettes de mueslis  : </p>
+          <p class="text-center"><b>Chocolat Noir & au lait</b>, <b>Cranberry Chocolat blanc</b> et <b>Fruits & Noix</b>, idéales pour attaquer votre journée ou votre séance de sport.</p>
+          <p class="text-center">Healthy et gourmandes, mélangez-les avec du yahourt, du lait, des fruits frais, du miel…une base idéale pour des "Açai bowls".</p>
+        </div>
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/situationchocoblanc.png');">
-          <a class="card-link" href="#" ></a>
+        <div class="card" style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2)), url('images/situationchocoblanc.png');">
+          <div class="card-category">
+            <h2>Crambery - Chocolat blanc</h2>
+          </div>
+          <%= link_to "", "", class: "card-link", data: {toggle: "modal", target: "#crambModal"} %>
         </div>
       </div>
       <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/situationchoconoir.png');">
-          <a class="card-link" href="#" ></a>
+        <div class="card" style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2)), url('images/situationchoconoir.png');">
+        <div class="card-category">
+          <h2>Chocolat noir & au lait</h2>
+        </div>
+          <%= link_to "", "", class: "card-link", data: {toggle: "modal", target: "#chocoModal"} %>
         </div>
       </div>
       <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/situationfruitssetnoix.png');">
-          <a class="card-link" href="#" ></a>
+        <div class="card" style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2)), url('images/situationfruitssetnoix.png');">
+        <div class="card-category">
+          <h2>Fruits & noix</h2>
         </div>
+          <%= link_to "", "", class: "card-link", data: {toggle: "modal", target: "#fruitModal"} %>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="formulaire" id="form_anchor">
+        <h4>Tentez de gagner un petit-déjeuner pour 2 personnes livré chez vous à Paris ainsi que 10 lots de 3 mueslis !</h4>
+
+          <form class="form-horizontal" accept-charset="UTF-8" action="https://formkeep.com/f/612cac98f5df" method="POST">
+            <div class="form-group">
+              <div class="col-sm-2">
+                <label for="first_name" class="control-label">Prénom</label>
+              </div>
+              <div class="col-sm-10">
+               <input type="text" class="form-control" id="first_name" name="Prénom">
+              </div>
+            </div>
+            <div class="form-group">
+            <div class="col-sm-2">
+              <label for="family_name" class="control-label">Nom</label>
+              </div>
+              <div class="col-sm-10">
+              <input type="text" class="form-control" id="family_name" name="Nom">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-2">
+              <label for="email_address" class="control-label">Email</label>
+              </div>
+              <div class="col-sm-10">
+              <input type="email" class="form-control" id="email_address" name="email">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-2">
+              <label for="country" class="control-label">Pays</label>
+              </div>
+              <div class="col-sm-10">
+              <input type="text" class="form-control" id="country" name="Pays">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-2">
+              <label for="city" class="control-label">Ville</label>
+              </div>
+              <div class="col-sm-10">
+              <input type="text" class="form-control" id="city" name="Ville">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-2">
+              <label for="telephone_number" class="control-label">Téléphone</label>
+              </div>
+              <div class="col-sm-10">
+              <input type="tel" class="form-control" id="telephone_number" name="Téléphone">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="hidden" name="Newsletter" value="no">
+                    <input type="checkbox" name="Newsletter" value="yes"> Je m'inscris à la newsletter Marlette. (obligatoire pour participer)
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="hidden" name="Parisien" value="no">
+                    <input type="checkbox"  name="Parisien" value="yes"> Si j’habite Paris, je suis disponible pour recevoir mon petit-déjeuner le weekend du 25-26 juin.
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="hidden" name="utf8" value="✓">
+              <button type="submit" class="btn btn-alert">Je tente ma chance</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+<div class="modal fade" id="crambModal" tabindex="-1" role="dialog" aria-labelledby="crambModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content-card">
+      <div class="modal-body-card">
+        <%= image_tag "situation_3.png" %>
+      </div>
+      <div class="modal-img-card">
+        <%= image_tag "MuesliCramberry.jpg" %>
+      </div>
+      <div class="modal-buy-card text-center">
+        <p>prix: 6,50€</p>
+        <%= link_to "J'en veux !", "http://www.marlette.fr/shop/les-mueslis/muesli-cranberry-chocolat-blanc/", :target => "_blank", class: "btn btn-primary" %>
       </div>
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="chocoModal" tabindex="-1" role="dialog" aria-labelledby="chocoModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content-card">
+      <div class="modal-body-card">
+        <%= image_tag "situation_1.png" %>
+      </div>
+      <div class="modal-img-card">
+        <%= image_tag "MuesliChoco.jpg" %>
+      </div>
+      <div class="modal-buy-card text-center">
+        <p>prix: 6,50€</p>
+        <%= link_to "J'en veux !", "http://www.marlette.fr/shop/les-mueslis/muesli-chocolat-noir-au-lait/", :target => "_blank", class: "btn btn-primary" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="fruitModal" tabindex="-1" role="dialog" aria-labelledby="fruitModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content-card">
+      <div class="modal-body-card">
+        <%= image_tag "situation_2.png" %>
+      </div>
+      <div class="modal-img-card">
+        <%= image_tag "MuesliFruits.jpg" %>
+      </div>
+      <div class="modal-buy-card text-center">
+        <p>prix: 6,50€</p>
+        <%= link_to "J'en veux !", "http://www.marlette.fr/shop/les-mueslis/muesli-fruits-noix/", :target => "_blank", class: "btn btn-primary" %>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -79,13 +237,13 @@ title: Le Wagon Middleman boilerplate
 </div> -->
 
 
-<div class="text-center padded" id="newsletter">
+<!-- <div class="text-center padded" id="newsletter">
   <h2>Get news from us</h2>
   <p>Leave us your mail and get news from us</p>
   <form class="form-inline">
     <input type="email" placeholder="bob@gmail.com" class="form-control">
     <input type="submit" value="Subscribe" class="btn btn-primary">
   </form>
-</div>
+</div> -->
 
 

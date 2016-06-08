@@ -1,0 +1,52 @@
+.modal-content-card{
+  border-radius: 5px;
+  border: 0px;
+  height: 400px;
+  width: 500px;
+  overflow: hidden;
+  margin-left: 50px;
+  align-items: center;
+  position: relative;
+}
+
+.modal-body-card{
+  position: absolute;
+  height: 400px;
+  width : 250px;
+  background-color: green;
+
+}
+
+.modal-body-card img {
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover !important;
+}
+
+.modal-img-card{
+  position: absolute;
+  right: 0px;
+  height: 300px;
+  width: 250px;
+  background-color: white;
+
+}
+
+.modal-img-card img {
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover !important;
+}
+
+.modal-buy-card{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 100px;
+  width: 250px;
+  background-color: white;
+}
