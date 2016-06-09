@@ -1,20 +1,24 @@
 .modal-content-card{
   border-radius: 5px;
   border: 0px;
-  height: 400px;
-  width: 500px;
+  height: 427px;
+  width: 550px;
   overflow: hidden;
   margin-left: 50px;
   align-items: center;
   position: relative;
+  background-color: white;
+}
+
+.modal-content-card p {
+    text-align: center;
+    padding-top: 5px;
 }
 
 .modal-body-card{
   position: absolute;
   height: 400px;
   width : 250px;
-  background-color: green;
-
 }
 
 .modal-body-card img {
@@ -29,7 +33,7 @@
   position: absolute;
   right: 0px;
   height: 300px;
-  width: 250px;
+  width: 275px;
   background-color: white;
 
 }
@@ -46,7 +50,7 @@
   position: absolute;
   right: 0px;
   bottom: 0px;
-  height: 100px;
-  width: 250px;
+  height: 50px;
+  width: 275px;
   background-color: white;
 }

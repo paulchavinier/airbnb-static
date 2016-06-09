@@ -33,7 +33,7 @@ title: Le Wagon Middleman boilerplate
           <h3 class="text-center" id="nouvelle_gamme">Marlette lance ses mueslis : les nouveaux indispensables du petit-déjeuner !</h3><br>
           <p class="text-center">Envie de faire le plein d’énergie dès le réveil ? Découvrez nos trois délicieuses recettes de mueslis  : </p>
           <p class="text-center"><b>Chocolat Noir & au lait</b>, <b>Cranberry Chocolat blanc</b> et <b>Fruits & Noix</b>, idéales pour attaquer votre journée ou votre séance de sport.</p>
-          <p class="text-center">Healthy et gourmandes, mélangez-les avec du yahourt, du lait, des fruits frais, du miel…une base idéale pour des "Açai bowls".</p>
+          <p class="text-center">Healthy et gourmandes, mélangez-les avec du yahourt, du lait, des fruits frais, du miel…Elles seront aussi une base idéale pour des "Açai bowls".</p>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@ title: Le Wagon Middleman boilerplate
       <div class="col-xs-12 col-sm-4">
         <div class="card" style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2)), url('images/situationchocoblanc.png');">
           <div class="card-category">
-            <h2>Crambery - Chocolat blanc</h2>
+            <h2>Cranberry - Chocolat blanc</h2>
           </div>
           <%= link_to "", "", class: "card-link", data: {toggle: "modal", target: "#crambModal"} %>
         </div>
@@ -113,6 +113,14 @@ title: Le Wagon Middleman boilerplate
             </div>
             <div class="form-group">
               <div class="col-sm-2">
+              <label for="postal_adress" class="control-label">Adresse</label>
+              </div>
+              <div class="col-sm-10">
+              <input type="text" class="form-control" id="postal_adress" name="Adresse">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-2">
               <label for="telephone_number" class="control-label">Téléphone</label>
               </div>
               <div class="col-sm-10">
@@ -142,14 +150,21 @@ title: Le Wagon Middleman boilerplate
             <div class="form-group">
               <input type="hidden" name="utf8" value="✓">
               <button type="submit" class="btn btn-alert">Je tente ma chance</button>
+              <p>Résultat le 24 juin 2016</p>
+              <p id="reglement"><%= link_to "Réglement du jeu concours", "http://www.marlette.fr", :target => "_blank"%></p>
             </div>
           </form>
         </div>
       </div>
     </div>
-
-
-
+    <div class="row">
+      <div class="col-xs-12">
+        <h4 class=text-center>
+          Et partagez vos recettes sur Instagram avec <b>#MUESLIMARLETTE</b>
+        </h4>
+      </div>
+    </div>
+    <iframe src="//lightwidget.com/widgets/ae2defaea7df534c8d7361ca1c22cd26.html" id="lightwidget_ae2defaea7" name="lightwidget_ae2defaea7"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 800px; border: 0; overflow: hidden;"></iframe>
 
 
   </div>
@@ -159,6 +174,7 @@ title: Le Wagon Middleman boilerplate
 <div class="modal fade" id="crambModal" tabindex="-1" role="dialog" aria-labelledby="crambModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content-card">
+    <p>Muesli cranberry & chocolat blanc</p>
       <div class="modal-body-card">
         <%= image_tag "situation_3.png" %>
       </div>
@@ -166,7 +182,6 @@ title: Le Wagon Middleman boilerplate
         <%= image_tag "MuesliCramberry.jpg" %>
       </div>
       <div class="modal-buy-card text-center">
-        <p>prix: 6,50€</p>
         <%= link_to "J'en veux !", "http://www.marlette.fr/shop/les-mueslis/muesli-cranberry-chocolat-blanc/", :target => "_blank", class: "btn btn-primary" %>
       </div>
     </div>
@@ -176,6 +191,7 @@ title: Le Wagon Middleman boilerplate
 <div class="modal fade" id="chocoModal" tabindex="-1" role="dialog" aria-labelledby="chocoModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content-card">
+    <p>Muesli chocolat noir & au lait</p>
       <div class="modal-body-card">
         <%= image_tag "situation_1.png" %>
       </div>
@@ -183,7 +199,6 @@ title: Le Wagon Middleman boilerplate
         <%= image_tag "MuesliChoco.jpg" %>
       </div>
       <div class="modal-buy-card text-center">
-        <p>prix: 6,50€</p>
         <%= link_to "J'en veux !", "http://www.marlette.fr/shop/les-mueslis/muesli-chocolat-noir-au-lait/", :target => "_blank", class: "btn btn-primary" %>
       </div>
     </div>
@@ -193,6 +208,7 @@ title: Le Wagon Middleman boilerplate
 <div class="modal fade" id="fruitModal" tabindex="-1" role="dialog" aria-labelledby="fruitModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content-card">
+    <p>Muesli frtuis & noix</p>
       <div class="modal-body-card">
         <%= image_tag "situation_2.png" %>
       </div>
@@ -200,12 +216,15 @@ title: Le Wagon Middleman boilerplate
         <%= image_tag "MuesliFruits.jpg" %>
       </div>
       <div class="modal-buy-card text-center">
-        <p>prix: 6,50€</p>
         <%= link_to "J'en veux !", "http://www.marlette.fr/shop/les-mueslis/muesli-fruits-noix/", :target => "_blank", class: "btn btn-primary" %>
       </div>
     </div>
   </div>
 </div>
+
+
+<!-- LightWidget WIDGET -->
+
 
 
 
