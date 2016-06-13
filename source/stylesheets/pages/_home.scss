@@ -28,6 +28,11 @@
 #form_anchor .confirmation {
   display: none;
   color: #b11a29;
+  font-size: 18px;
+}
+
+.formulaire a {
+  color: #b11a29;
 }
 
 #form_anchor:target .confirmation {
