@@ -33,14 +33,14 @@ title: Le Wagon Middleman boilerplate
           <h3 class="text-center" id="nouvelle_gamme">Marlette lance ses mueslis : les nouveaux indispensables du petit-déjeuner !</h3><br>
           <p class="text-center">Envie de faire le plein d’énergie dès le réveil ? Découvrez nos trois délicieuses recettes de mueslis  : </p>
           <p class="text-center"><b>Chocolat Noir & au lait</b>, <b>Cranberry Chocolat blanc</b> et <b>Fruits & Noix</b>, idéales pour attaquer votre journée ou votre séance de sport.</p>
-          <p class="text-center">Healthy et gourmandes, mélangez-les avec du yahourt, du lait, des fruits frais, du miel…Elles seront aussi une base idéale pour des "Açai bowls".</p>
+          <p class="text-center">Healthy et gourmandes, mélangez-les avec du yahourt, du lait, des fruits frais ou du miel… Elles seront aussi une base idéale pour des "Açai bowls".</p>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2)), url('images/situationchocoblanc.png');">
+        <div class="card" style="background: url('images/situationchocoblanc.png');">
           <div class="card-category">
             <h2>Cranberry - Chocolat blanc</h2>
           </div>
@@ -48,7 +48,7 @@ title: Le Wagon Middleman boilerplate
         </div>
       </div>
       <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2)), url('images/situationchoconoir.png');">
+        <div class="card" style="background: url('images/situationchoconoir.png');">
         <div class="card-category">
           <h2>Chocolat noir & au lait</h2>
         </div>
@@ -56,7 +56,7 @@ title: Le Wagon Middleman boilerplate
         </div>
       </div>
       <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2)), url('images/situationfruitssetnoix.png');">
+        <div class="card" style="background: url('images/situationfruitssetnoix.png');">
         <div class="card-category">
           <h2>Fruits & noix</h2>
         </div>
@@ -76,7 +76,7 @@ title: Le Wagon Middleman boilerplate
                 <label for="first_name" class="control-label">Prénom</label>
               </div>
               <div class="col-sm-10">
-               <input type="text" class="form-control" id="first_name" name="Prénom">
+               <input type="text" class="form-control" id="first_name" name="Prénom" required>
               </div>
             </div>
             <div class="form-group">
@@ -84,7 +84,7 @@ title: Le Wagon Middleman boilerplate
               <label for="family_name" class="control-label">Nom</label>
               </div>
               <div class="col-sm-10">
-              <input type="text" class="form-control" id="family_name" name="Nom">
+              <input type="text" class="form-control" id="family_name" name="Nom" required>
               </div>
             </div>
             <div class="form-group">
@@ -92,7 +92,7 @@ title: Le Wagon Middleman boilerplate
               <label for="email_address" class="control-label">Email</label>
               </div>
               <div class="col-sm-10">
-              <input type="email" class="form-control" id="email_address" name="email">
+              <input type="email" class="form-control" id="email_address" name="email" required>
               </div>
             </div>
             <div class="form-group">
@@ -100,7 +100,7 @@ title: Le Wagon Middleman boilerplate
               <label for="country" class="control-label">Pays</label>
               </div>
               <div class="col-sm-10">
-              <input type="text" class="form-control" id="country" name="Pays">
+              <input type="text" class="form-control" id="country" name="Pays" required>
               </div>
             </div>
             <div class="form-group">
@@ -108,7 +108,7 @@ title: Le Wagon Middleman boilerplate
               <label for="city" class="control-label">Ville</label>
               </div>
               <div class="col-sm-10">
-              <input type="text" class="form-control" id="city" name="Ville">
+              <input type="text" class="form-control" id="city" name="Ville" required>
               </div>
             </div>
             <div class="form-group">
@@ -116,7 +116,7 @@ title: Le Wagon Middleman boilerplate
               <label for="postal_adress" class="control-label">Adresse</label>
               </div>
               <div class="col-sm-10">
-              <input type="text" class="form-control" id="postal_adress" name="Adresse">
+              <input type="text" class="form-control" id="postal_adress" name="Adresse" required>
               </div>
             </div>
             <div class="form-group">
@@ -154,6 +154,9 @@ title: Le Wagon Middleman boilerplate
               <p id="reglement"><%= link_to "Réglement du jeu concours", "http://www.marlette.fr", :target => "_blank"%></p>
             </div>
           </form>
+          <p class="confirmation">
+            Merci, votre participation a bien été enregistrée. A bientôt au Café Marlette ou sur www.marlette.fr !
+          </p>
         </div>
       </div>
     </div>
@@ -172,7 +175,7 @@ title: Le Wagon Middleman boilerplate
 <div class="modal fade" id="crambModal" tabindex="-1" role="dialog" aria-labelledby="crambModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content-card">
-    <p>Muesli cranberry & chocolat blanc</p>
+    <p>Cranberry - Chocolat blanc</p>
       <div class="modal-body-card">
         <%= image_tag "situation_3.png" %>
       </div>
@@ -189,7 +192,7 @@ title: Le Wagon Middleman boilerplate
 <div class="modal fade" id="chocoModal" tabindex="-1" role="dialog" aria-labelledby="chocoModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content-card">
-    <p>Muesli chocolat noir & au lait</p>
+    <p>Chocolat noir & au lait</p>
       <div class="modal-body-card">
         <%= image_tag "situation_1.png" %>
       </div>
@@ -206,7 +209,7 @@ title: Le Wagon Middleman boilerplate
 <div class="modal fade" id="fruitModal" tabindex="-1" role="dialog" aria-labelledby="fruitModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content-card">
-    <p>Muesli frtuis & noix</p>
+    <p>Fruits & noix</p>
       <div class="modal-body-card">
         <%= image_tag "situation_2.png" %>
       </div>

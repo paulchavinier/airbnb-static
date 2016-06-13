@@ -25,6 +25,15 @@
   text-align: center;
 }
 
+#form_anchor .confirmation {
+  display: none;
+  color: #b11a29;
+}
+
+#form_anchor:target .confirmation {
+  display: inherit;
+}
+
 .formulaire p {
   font-size: 12px;
   color: grey;
